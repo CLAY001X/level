@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задания и Цели</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Мои Задания</h1>
+    <div class="task-container">
+        <div class="task">
+            <p>Бег: <span id="runCount">0</span> км / Цель: <span id="runGoal">10</span> км</p>
+            <div class="button-container">
+                <button class="increment-btn" data-target="runCount" data-action="decrement">-</button>
+                <button class="increment-btn" data-target="runCount" data-action="increment">+</button>
+                <button class="goal-btn" data-target="runGoal">И/З</button>
+            </div>
+        </div>
+        <div class="task">
+            <p>Отжимания: <span id="pushupCount">0</span> / Цель: <span id="pushupGoal">100</span></p>
+            <div class="button-container">
+                <button class="increment-btn" data-target="pushupCount" data-action="decrement">-</button>
+                <button class="increment-btn" data-target="pushupCount" data-action="increment">+</button>
+                <button class="goal-btn" data-target="pushupGoal">И/З</button>
+            </div>
+        </div>
+        <div class="task">
+            <p>Пресс: <span id="situpCount">0</span> / Цель: <span id="situpGoal">100</span></p>
+            <div class="button-container">
+                <button class="increment-btn" data-target="situpCount" data-action="decrement">-</button>
+                <button class="increment-btn" data-target="situpCount" data-action="increment">+</button>
+                <button class="goal-btn" data-target="situpGoal">И/З</button>
+            </div>
+        </div>
+        <div class="task">
+            <p>Приседания: <span id="squatCount">0</span> / Цель: <span id="squatGoal">100</span></p>
+            <div class="button-container">
+                <button class="increment-btn" data-target="squatCount" data-action="decrement">-</button>
+                <button class="increment-btn" data-target="squatCount" data-action="increment">+</button>
+                <button class="goal-btn" data-target="squatGoal">И/З</button>
+            </div>
+        </div>
+    </div>
+    <button id="resetButton">Сбросить все</button>
+    <div class="motivational-message">
+        <p>test of strength</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

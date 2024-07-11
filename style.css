@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #282c34;
+    margin: 0;
+    color: #61dafb;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    max-width: 400px;
+    padding: 0 10px;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid #61dafb;
+    border-radius: 10px;
+    background-color: #1c1e22;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.task p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.increment-btn,
+.goal-btn {
+    padding: 5px 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #61dafb;
+    color: #282c34;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.increment-btn[data-action="decrement"] {
+    background-color: #e53935;
+}
+
+.increment-btn[data-action="decrement"]:hover {
+    background-color: #c62828;
+}
+
+.increment-btn:hover,
+.goal-btn:hover {
+    background-color: #21a1f1;
+}
+
+#resetButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+    background-color: #e91e63;
+}
+
+.motivational-message {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .button-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .increment-btn,
+    .goal-btn {
+        flex-grow: 1;
+        font-size: 1em;
+    }
+}
